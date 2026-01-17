@@ -131,6 +131,50 @@ static void mod_256qam_bytes(const srsran_modem_table_t* q, const uint8_t* bits,
   }
 }
 
+static void mod_1024qam_bytes(const srsran_modem_table_t* q, const uint8_t* bits, cf_t* symbols, uint32_t nbits)
+{
+  uint32_t nblocks = nbits / 40;
+  for (uint32_t i = 0; i < nblocks; i++) {
+    uint8_t in0 = bits[5 * i + 0];
+    uint8_t in1 = bits[5 * i + 1];
+    uint8_t in2 = bits[5 * i + 2];
+    uint8_t in3 = bits[5 * i + 3];
+    uint8_t in4 = bits[5 * i + 4];
+
+    uint16_t idx0 = ((uint16_t)in0 << 2) | (in1 >> 6);
+    uint16_t idx1 = ((uint16_t)(in1 & 0x3f) << 4) | (in2 >> 4);
+    uint16_t idx2 = ((uint16_t)(in2 & 0x0f) << 6) | (in3 >> 2);
+    uint16_t idx3 = ((uint16_t)(in3 & 0x03) << 8) | in4;
+
+    symbols[i * 4 + 0] = q->symbol_table[idx0];
+    symbols[i * 4 + 1] = q->symbol_table[idx1];
+    symbols[i * 4 + 2] = q->symbol_table[idx2];
+    symbols[i * 4 + 3] = q->symbol_table[idx3];
+  }
+
+  uint32_t rem_bits = nbits % 40;
+  if (rem_bits) {
+    const uint8_t* in = &bits[5 * nblocks];
+    uint32_t       rem_bytes = (rem_bits + 7) / 8;
+    uint32_t       out_idx = 4 * nblocks;
+    const uint32_t shift_base = 14; // 24-bit window minus 10-bit symbol.
+
+    for (uint32_t symbol = 0; symbol < rem_bits / 10; symbol++) {
+      uint32_t bit_offset = symbol * 10;
+      uint32_t byte_idx   = bit_offset / 8;
+      uint32_t bit_idx    = bit_offset % 8;
+      uint8_t  b0         = in[byte_idx];
+      uint8_t  b1         = (byte_idx + 1 < rem_bytes) ? in[byte_idx + 1] : 0;
+      uint8_t  b2         = (byte_idx + 2 < rem_bytes) ? in[byte_idx + 2] : 0;
+      uint32_t value      = ((uint32_t)b0 << 16) | ((uint32_t)b1 << 8) | b2;
+      uint32_t shift      = shift_base - bit_idx;
+      uint16_t idx        = (uint16_t)((value >> shift) & 0x3ff);
+
+      symbols[out_idx++] = q->symbol_table[idx];
+    }
+  }
+}
+
 /* Assumes packet bits as input */
 int srsran_mod_modulate_bytes(const srsran_modem_table_t* q, const uint8_t* bits, cf_t* symbols, uint32_t nbits)
 {
@@ -158,8 +202,11 @@ int srsran_mod_modulate_bytes(const srsran_modem_table_t* q, const uint8_t* bits
     case 8:
       mod_256qam_bytes(q, bits, symbols, nbits);
       break;
+    case 10:
+      mod_1024qam_bytes(q, bits, symbols, nbits);
+      break;
     default:
-      ERROR("srsran_mod_modulate_bytes() accepts QPSK/16QAM/64QAM modulations only");
+      ERROR("srsran_mod_modulate_bytes() accepts BPSK/QPSK/16QAM/64QAM/256QAM/1024QAM modulations only");
       return SRSRAN_ERROR;
   }
   return nbits / q->nbits_x_symbol;

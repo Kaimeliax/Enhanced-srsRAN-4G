@@ -36,7 +36,7 @@ static srsran_mod_t modulation = SRSRAN_MOD_NITEMS;
 
 void usage(char* prog)
 {
-  printf("Usage: %s [nfv] -m modulation (1: BPSK, 2: QPSK, 4: QAM16, 6: QAM64)\n", prog);
+  printf("Usage: %s [nfv] -m modulation (1: BPSK, 2: QPSK, 4: QAM16, 6: QAM64, 8: QAM256, 10: QAM1024)\n", prog);
   printf("\t-n num_bits [Default %d]\n", num_bits);
   printf("\t-f nof_frames [Default %d]\n", nof_frames);
   printf("\t-v srsran_verbose [Default None]\n");
@@ -73,9 +73,12 @@ void parse_args(int argc, char** argv)
           case 8:
             modulation = SRSRAN_MOD_256QAM;
             break;
+          case 10:
+            modulation = SRSRAN_MOD_1024QAM;
+            break;
           default:
             ERROR("Invalid modulation %d. Possible values: "
-                  "(1: BPSK, 2: QPSK, 4: QAM16, 6: QAM64)",
+                  "(1: BPSK, 2: QPSK, 4: QAM16, 6: QAM64, 8: QAM256, 10: QAM1024)",
                   (int)strtol(argv[optind], NULL, 10));
             break;
         }
@@ -104,6 +107,8 @@ float mse_threshold()
       return 0.19;
     case SRSRAN_MOD_256QAM:
       return 0.3;
+    case SRSRAN_MOD_1024QAM:
+      return 0.4;
     default:
       return -1.0f;
   }

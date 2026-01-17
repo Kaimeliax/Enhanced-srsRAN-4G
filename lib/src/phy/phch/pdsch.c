@@ -45,11 +45,14 @@ const static float pdsch_cfg_cell_specific_ratio_table[2][4] = {
     /* One antenna port         */ {1.0f / 1.0f, 4.0f / 5.0f, 3.0f / 5.0f, 2.0f / 5.0f},
     /* Two or more antenna port */ {5.0f / 4.0f, 1.0f / 1.0f, 3.0f / 4.0f, 1.0f / 2.0f}};
 
-const static srsran_mod_t modulations[5] = {SRSRAN_MOD_BPSK,
-                                            SRSRAN_MOD_QPSK,
-                                            SRSRAN_MOD_16QAM,
-                                            SRSRAN_MOD_64QAM,
-                                            SRSRAN_MOD_256QAM};
+const static srsran_mod_t modulations[SRSRAN_MOD_NITEMS] = {
+    [SRSRAN_MOD_BPSK] = SRSRAN_MOD_BPSK,
+    [SRSRAN_MOD_QPSK] = SRSRAN_MOD_QPSK,
+    [SRSRAN_MOD_16QAM] = SRSRAN_MOD_16QAM,
+    [SRSRAN_MOD_64QAM] = SRSRAN_MOD_64QAM,
+    [SRSRAN_MOD_256QAM] = SRSRAN_MOD_256QAM,
+    [SRSRAN_MOD_1024QAM] = SRSRAN_MOD_1024QAM,
+};
 
 typedef struct {
   /* Thread identifier: they must set before thread creation */
@@ -282,7 +285,7 @@ static int pdsch_init(srsran_pdsch_t* q, uint32_t max_prb, bool is_ue, uint32_t 
 
     for (int i = 0; i < SRSRAN_MAX_CODEWORDS; i++) {
       // Allocate int16_t for reception (LLRs)
-      q->e[i] = srsran_vec_i16_malloc(q->max_re * srsran_mod_bits_x_symbol(SRSRAN_MOD_256QAM));
+      q->e[i] = srsran_vec_i16_malloc(q->max_re * srsran_mod_bits_x_symbol(SRSRAN_MOD_1024QAM));
       if (!q->e[i]) {
         goto clean;
       }
@@ -600,6 +603,9 @@ static void csi_correction(srsran_pdsch_t* q, srsran_pdsch_cfg_t* cfg, uint32_t 
           _e[1] = _mm_mulhi_pi16(_e[1], _mm_cvtps_pi16(_csi));
           _e += 2;
         }
+        break;
+      case SRSRAN_MOD_1024QAM:
+        // Fall back to scalar scaling for 1024QAM.
         break;
       case SRSRAN_MOD_NITEMS:
       default:; // Do nothing

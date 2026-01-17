@@ -285,4 +285,35 @@ inline void hard_qam256_demod(const cf_t* in, uint8_t* out, uint32_t N)
   }
 }
 
+inline void hard_qam1024_demod(const cf_t* in, uint8_t* out, uint32_t N)
+{
+  for (uint32_t s = 0; s < N; s++) {
+    float real = __real__ in[s];
+    float imag = __imag__ in[s];
+
+    out[10 * s] = (real > 0) ? 0x0 : 0x1;
+    out[10 * s + 1] = (imag > 0) ? 0x0 : 0x1;
+
+    float real_abs = fabsf(real) - QAM1024_THRESHOLD_1;
+    float imag_abs = fabsf(imag) - QAM1024_THRESHOLD_1;
+    out[10 * s + 2] = (real_abs > 0) ? 0x1 : 0x0;
+    out[10 * s + 3] = (imag_abs > 0) ? 0x1 : 0x0;
+
+    real_abs = fabsf(real_abs) - QAM1024_THRESHOLD_2;
+    imag_abs = fabsf(imag_abs) - QAM1024_THRESHOLD_2;
+    out[10 * s + 4] = (real_abs > 0) ? 0x1 : 0x0;
+    out[10 * s + 5] = (imag_abs > 0) ? 0x1 : 0x0;
+
+    real_abs = fabsf(real_abs) - QAM1024_THRESHOLD_3;
+    imag_abs = fabsf(imag_abs) - QAM1024_THRESHOLD_3;
+    out[10 * s + 6] = (real_abs > 0) ? 0x1 : 0x0;
+    out[10 * s + 7] = (imag_abs > 0) ? 0x1 : 0x0;
+
+    real_abs = fabsf(real_abs) - QAM1024_THRESHOLD_4;
+    imag_abs = fabsf(imag_abs) - QAM1024_THRESHOLD_4;
+    out[10 * s + 8] = (real_abs > 0) ? 0x1 : 0x0;
+    out[10 * s + 9] = (imag_abs > 0) ? 0x1 : 0x0;
+  }
+}
+
 #endif /* SRSRAN_HARD_DEMOD_LTE_H_ */

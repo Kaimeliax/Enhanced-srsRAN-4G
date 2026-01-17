@@ -179,3 +179,25 @@ void set_256QAMtable(cf_t* table)
     __imag__ table[i] = imag / sqrtf(170);
   }
 }
+
+/**
+ * Set the 1024QAM modulation table */
+void set_1024QAMtable(cf_t* table)
+{
+  // LTE-1024QAM constellation:
+  for (uint32_t i = 0; i < 1024; i++) {
+    float offset = -1;
+    float real   = 0;
+    float imag   = 0;
+    for (uint32_t j = 0; j < 5; j++) {
+      real += offset;
+      imag += offset;
+      offset *= 2;
+
+      real *= ((i & (1 << (2 * j + 1)))) ? +1 : -1;
+      imag *= ((i & (1 << (2 * j + 0)))) ? +1 : -1;
+    }
+    __real__ table[i] = real / sqrtf(682);
+    __imag__ table[i] = imag / sqrtf(682);
+  }
+}

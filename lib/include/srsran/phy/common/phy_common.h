@@ -288,6 +288,7 @@ typedef enum SRSRAN_API {
   SRSRAN_MOD_16QAM,    /*!< \brief QAM16. */
   SRSRAN_MOD_64QAM,    /*!< \brief QAM64. */
   SRSRAN_MOD_256QAM,   /*!< \brief QAM256. */
+  SRSRAN_MOD_1024QAM,  /*!< \brief QAM1024. */
   SRSRAN_MOD_NITEMS
 } srsran_mod_t;
 
