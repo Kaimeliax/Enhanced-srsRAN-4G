@@ -125,7 +125,7 @@ uint32_t srsran_ra_type2_n_vrb_dl(uint32_t nof_prb, bool ngap_is_1)
 /* Modulation and TBS index table for PDSCH from 3GPP TS 36.213 v10.3.0 table 7.1.7.1-1 */
 static int srsran_ra_dl_tbs_idx_from_mcs(uint32_t mcs, bool use_tbs_index_alt)
 {
-  if (use_tbs_index_alt && mcs < 28) {
+  if (use_tbs_index_alt && mcs < 27) {
     return dl_mcs_tbs_idx_table2[mcs];
   } else if (!use_tbs_index_alt && mcs < 29) {
     return dl_mcs_tbs_idx_table[mcs];
@@ -151,22 +151,14 @@ int srsran_ra_tbs_idx_from_mcs(uint32_t mcs, bool use_tbs_index_alt, bool is_ul)
 srsran_mod_t srsran_ra_dl_mod_from_mcs(uint32_t mcs, bool use_tbs_index_alt)
 {
   if (use_tbs_index_alt) {
-    // 3GPP 36.213 R12 Table 7.1.7.1-1A
-    if (mcs == 28) {
+    // 3GPP 36.213 Table 7.1.7.1-1B (IMCS 0-4 QPSK, 5-7 16QAM, 8-14 64QAM, 15-22 256QAM, 23-26 1024QAM).
+    if (mcs < 5) {
       return SRSRAN_MOD_QPSK;
-    } else if (mcs == 29) {
+    } else if (mcs < 8) {
       return SRSRAN_MOD_16QAM;
-    } else if (mcs == 30) {
+    } else if (mcs < 15) {
       return SRSRAN_MOD_64QAM;
-    } else if (mcs == 31) {
-      return SRSRAN_MOD_256QAM;
-    } else if (mcs < 5) {
-      return SRSRAN_MOD_QPSK;
-    } else if (mcs < 11) {
-      return SRSRAN_MOD_16QAM;
-    } else if (mcs < 20) {
-      return SRSRAN_MOD_64QAM;
-    } else if (mcs < 27) {
+    } else if (mcs < 23) {
       return SRSRAN_MOD_256QAM;
     } else {
       return SRSRAN_MOD_1024QAM;
@@ -200,7 +192,7 @@ srsran_mod_t srsran_ra_ul_mod_from_mcs(uint32_t mcs)
 static int srsran_ra_dl_mcs_from_tbs_idx(uint32_t tbs_idx, bool use_tbs_index_alt)
 {
   if (use_tbs_index_alt) {
-    for (int mcs = 27; mcs >= 0; mcs--) {
+    for (int mcs = 26; mcs >= 0; mcs--) {
       if (tbs_idx == dl_mcs_tbs_idx_table2[mcs]) {
         return mcs;
       }

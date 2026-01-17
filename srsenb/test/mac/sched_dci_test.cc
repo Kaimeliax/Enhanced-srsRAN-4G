@@ -43,7 +43,7 @@ struct tbs_test_args {
     if (is_ul) {
       return ul64qam_enabled ? 6 : 4;
     }
-    return use_tbs_index_alt ? 8 : 6;
+    return use_tbs_index_alt ? 10 : 6;
   }
   float get_max_coderate() const
   {
@@ -149,7 +149,7 @@ int assert_mcs_tbs_result(uint32_t cell_nof_prb,
   args.prb_grant_size    = prb_grant_size;
   args.use_tbs_index_alt = alt_cqi_table;
   if (alt_cqi_table) {
-    args.max_mcs = std::min(args.max_mcs, 27U); // limited to 27 for 256-QAM
+    args.max_mcs = std::min(args.max_mcs, 26U); // limited to 26 for 1024-QAM
   }
 
   tbs_info expected_result;
@@ -180,7 +180,7 @@ int test_mcs_lookup_specific()
   TESTASSERT(assert_mcs_tbs_result(100, 15, 1, 712, 28) == SRSRAN_SUCCESS);   // I_tbs=26
   TESTASSERT(assert_mcs_tbs_result(100, 15, 2, 1480, 28) == SRSRAN_SUCCESS);  // I_tbs=26
   TESTASSERT(assert_mcs_tbs_result(100, 15, 10, 7480, 28) == SRSRAN_SUCCESS); // I_tbs=26
-  TESTASSERT(assert_mcs_tbs_result(100, 15, 1, 968, 27, true) == SRSRAN_SUCCESS);
+  TESTASSERT(assert_mcs_tbs_result(100, 15, 1, 968, 26, true) == SRSRAN_SUCCESS);
 
   return SRSRAN_SUCCESS;
 }

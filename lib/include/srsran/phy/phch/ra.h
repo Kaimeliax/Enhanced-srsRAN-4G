@@ -75,7 +75,7 @@ typedef struct SRSRAN_API {
   enum { SRSRAN_RA_TYPE2_LOC = 0, SRSRAN_RA_TYPE2_DIST = 1 } mode;
 } srsran_ra_type2_t;
 
-#define SRSRAN_RA_NOF_TBS_IDX 34
+#define SRSRAN_RA_NOF_TBS_IDX 38
 
 SRSRAN_API uint32_t srsran_ra_type0_P(uint32_t nof_prb);
 

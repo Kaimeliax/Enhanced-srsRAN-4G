@@ -284,7 +284,7 @@ void phy_ue_db::addmod_rnti(uint16_t rnti, const phy_interface_rrc_lte::phy_rrc_
 
   // During a reconfiguration, all parameters in phy_cfg_t shall be applied immediately except:
   // - Multiple CSI request field in DCI (phy_cfg_t.dl_cfg.dci.multiple_csi_request_enabled)
-  // - Extended TBS tables (for 256QAM) (phy_cfg_t.dl_cfg.pdsch.use_tbs_index_alt)
+  // - Extended TBS tables (for 1024QAM) (phy_cfg_t.dl_cfg.pdsch.use_tbs_index_alt)
   // which shall be applied immediately only for UL grants and transmissions.
   //
   // For DL grants and transmissions, during the period between the transmission of the reconfiguration
@@ -431,7 +431,7 @@ int phy_ue_db::get_dl_config(uint16_t rnti, uint32_t enb_cc_idx, srsran_dl_cfg_t
   }
   dl_cfg = phy_cfg.dl_cfg;
 
-  // The DL configuration must overwrite the use_tbs_index_alt value (for 256QAM) with the temporary value
+  // The DL configuration must overwrite the use_tbs_index_alt value (for 1024QAM) with the temporary value
   // in case we are in the middle of a reconfiguration
   if (ue_db.count(rnti) && SRSRAN_RNTI_ISUSER(rnti)) {
     uint32_t ue_cc_idx = _get_ue_cc_idx(rnti, enb_cc_idx);

@@ -362,7 +362,7 @@ static int dl_dci_compute_tb(bool pdsch_use_tbs_index_alt, const srsran_dci_dl_t
     }
   }
 
-  // 256QAM table is allowed if:
+  // 1024QAM table is allowed if:
   // - if the higher layer parameter altCQI-Table-r12 is configured, and
   // - if the PDSCH is assigned by a PDCCH/EPDCCH with DCI format 1/1B/1D/2/2A/2B/2C/2D with
   // - CRC scrambled by C-RNTI,
