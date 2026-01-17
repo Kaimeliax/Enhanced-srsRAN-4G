@@ -50,6 +50,7 @@ int compute_mcs_from_max_tbs(uint32_t nof_prb,
                              int&     mcs,
                              int&     tbs_idx)
 {
+  // TS 36.213 Table 7.1.7.1-1B skips these ITBS indices for the 1024QAM table.
   constexpr static std::array<int, 11> forbidden_tbs_idx_alt{1, 3, 5, 7, 9, 10, 12, 14, 17, 19, 26};
 
   // Compute I_TBS based on max TBS

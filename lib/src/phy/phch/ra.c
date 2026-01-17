@@ -151,7 +151,7 @@ int srsran_ra_tbs_idx_from_mcs(uint32_t mcs, bool use_tbs_index_alt, bool is_ul)
 srsran_mod_t srsran_ra_dl_mod_from_mcs(uint32_t mcs, bool use_tbs_index_alt)
 {
   if (use_tbs_index_alt) {
-    // 3GPP 36.213 R15 Table 7.1.7.1-1B
+    // 3GPP 36.213 Table 7.1.7.1-1B (IMCS 0-4 QPSK, 5-7 16QAM, 8-14 64QAM, 15-22 256QAM, 23-26 1024QAM).
     if (mcs < 5) {
       return SRSRAN_MOD_QPSK;
     } else if (mcs < 8) {
