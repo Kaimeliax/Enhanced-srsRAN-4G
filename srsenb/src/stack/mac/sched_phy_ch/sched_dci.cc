@@ -50,10 +50,10 @@ int compute_mcs_from_max_tbs(uint32_t nof_prb,
                              int&     mcs,
                              int&     tbs_idx)
 {
-  constexpr static std::array<int, 6> forbidden_tbs_idx_alt{1, 3, 5, 7, 9, 26};
+  constexpr static std::array<int, 11> forbidden_tbs_idx_alt{1, 3, 5, 7, 9, 10, 12, 14, 17, 19, 26};
 
   // Compute I_TBS based on max TBS
-  uint32_t max_tbs_idx = (use_tbs_index_alt) ? 33 : 26;
+  uint32_t max_tbs_idx = (use_tbs_index_alt) ? 37 : 26;
   tbs_idx              = srsran_ra_tbs_to_table_idx(max_tbs, nof_prb, max_tbs_idx);
   if (tbs_idx <= 0) {
     return SRSRAN_ERROR;
@@ -61,7 +61,7 @@ int compute_mcs_from_max_tbs(uint32_t nof_prb,
   --tbs_idx; // get TBS index lower bound
   if (use_tbs_index_alt and
       std::find(forbidden_tbs_idx_alt.begin(), forbidden_tbs_idx_alt.end(), tbs_idx) != forbidden_tbs_idx_alt.end()) {
-    // some tbs_idx are invalid for 256QAM. See TS 36.213 - Table 7.1.7.1-1A
+    // some tbs_idx are invalid for 1024QAM. See TS 36.213 - Table 7.1.7.1-1B
     --tbs_idx;
   }
 
@@ -102,7 +102,7 @@ tbs_info compute_mcs_and_tbs(uint32_t nof_prb,
   assert((not is_ul or not use_tbs_index_alt) && "UL cannot use Alt CQI Table");
   assert((is_ul or not ulqam64_enabled) && "DL cannot use UL-QAM64 enable flag");
 
-  uint32_t max_Qm = (is_ul) ? (ulqam64_enabled ? 6 : 4) : (use_tbs_index_alt ? 8 : 6);
+  uint32_t max_Qm = (is_ul) ? (ulqam64_enabled ? 6 : 4) : (use_tbs_index_alt ? 10 : 6);
   max_coderate    = std::min(max_coderate, 0.930F * max_Qm);
 
   int mcs = 0;

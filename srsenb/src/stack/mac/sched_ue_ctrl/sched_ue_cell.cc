@@ -93,7 +93,7 @@ void sched_ue_cell::set_ue_cfg(const sched_interface::ue_cfg_t& ue_cfg_)
   }
   max_mcs_dl = cell_cfg->sched_cfg->pdsch_max_mcs >= 0 ? std::min(cell_cfg->sched_cfg->pdsch_max_mcs, 28) : 28U;
   if (ue_cfg->use_tbs_index_alt) {
-    max_mcs_dl = std::min(max_mcs_dl, 27U);
+    max_mcs_dl = std::min(max_mcs_dl, 26U);
   }
 
   if (ue_cc_idx >= 0) {
