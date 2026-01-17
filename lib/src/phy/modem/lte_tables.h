@@ -57,4 +57,6 @@ void set_64QAMtable(cf_t* table);
 
 void set_256QAMtable(cf_t* table);
 
+void set_1024QAMtable(cf_t* table);
+
 #endif /* SRSRAN_LTE_TABLES_H_ */

@@ -80,11 +80,18 @@ void demod_16qam_lte_s_sse(const cf_t* symbols, short* llr, int nsymbols);
 #define SCALE_SHORT_CONV_QAM16 400
 #define SCALE_SHORT_CONV_QAM64 700
 #define SCALE_SHORT_CONV_QAM256 1000
+#define SCALE_SHORT_CONV_QAM1024 1300
 
 #define SCALE_BYTE_CONV_QPSK 20
 #define SCALE_BYTE_CONV_QAM16 30
 #define SCALE_BYTE_CONV_QAM64 40
 #define SCALE_BYTE_CONV_QAM256 50
+#define SCALE_BYTE_CONV_QAM1024 60
+
+#define QAM1024_STEP_1 (16.0f / sqrtf(682.0f))
+#define QAM1024_STEP_2 (8.0f / sqrtf(682.0f))
+#define QAM1024_STEP_3 (4.0f / sqrtf(682.0f))
+#define QAM1024_STEP_4 (2.0f / sqrtf(682.0f))
 
 void demod_bpsk_lte_b(const cf_t* symbols, int8_t* llr, int nsymbols)
 {
@@ -843,6 +850,84 @@ void demod_256qam_lte_s(const cf_t* symbols, short* llr, int nsymbols)
   }
 }
 
+void demod_1024qam_lte(const cf_t* symbols, float* llr, int nsymbols)
+{
+  for (int i = 0; i < nsymbols; i++) {
+    float real = -__real__ symbols[i];
+    float imag = -__imag__ symbols[i];
+    *(llr++)   = real;
+    *(llr++)   = imag;
+    real       = fabsf(real) - QAM1024_STEP_1;
+    imag       = fabsf(imag) - QAM1024_STEP_1;
+    *(llr++)   = real;
+    *(llr++)   = imag;
+    real       = fabsf(real) - QAM1024_STEP_2;
+    imag       = fabsf(imag) - QAM1024_STEP_2;
+    *(llr++)   = real;
+    *(llr++)   = imag;
+    real       = fabsf(real) - QAM1024_STEP_3;
+    imag       = fabsf(imag) - QAM1024_STEP_3;
+    *(llr++)   = real;
+    *(llr++)   = imag;
+    real       = fabsf(real) - QAM1024_STEP_4;
+    imag       = fabsf(imag) - QAM1024_STEP_4;
+    *(llr++)   = real;
+    *(llr++)   = imag;
+  }
+}
+
+void demod_1024qam_lte_b(const cf_t* symbols, int8_t* llr, int nsymbols)
+{
+  for (int i = 0; i < nsymbols; i++) {
+    float real = -__real__ symbols[i];
+    float imag = -__imag__ symbols[i];
+    *(llr++)   = SCALE_BYTE_CONV_QAM1024 * real;
+    *(llr++)   = SCALE_BYTE_CONV_QAM1024 * imag;
+    real       = fabsf(real) - QAM1024_STEP_1;
+    imag       = fabsf(imag) - QAM1024_STEP_1;
+    *(llr++)   = SCALE_BYTE_CONV_QAM1024 * real;
+    *(llr++)   = SCALE_BYTE_CONV_QAM1024 * imag;
+    real       = fabsf(real) - QAM1024_STEP_2;
+    imag       = fabsf(imag) - QAM1024_STEP_2;
+    *(llr++)   = SCALE_BYTE_CONV_QAM1024 * real;
+    *(llr++)   = SCALE_BYTE_CONV_QAM1024 * imag;
+    real       = fabsf(real) - QAM1024_STEP_3;
+    imag       = fabsf(imag) - QAM1024_STEP_3;
+    *(llr++)   = SCALE_BYTE_CONV_QAM1024 * real;
+    *(llr++)   = SCALE_BYTE_CONV_QAM1024 * imag;
+    real       = fabsf(real) - QAM1024_STEP_4;
+    imag       = fabsf(imag) - QAM1024_STEP_4;
+    *(llr++)   = SCALE_BYTE_CONV_QAM1024 * real;
+    *(llr++)   = SCALE_BYTE_CONV_QAM1024 * imag;
+  }
+}
+
+void demod_1024qam_lte_s(const cf_t* symbols, short* llr, int nsymbols)
+{
+  for (int i = 0; i < nsymbols; i++) {
+    float real = -__real__ symbols[i];
+    float imag = -__imag__ symbols[i];
+    *(llr++)   = SCALE_SHORT_CONV_QAM1024 * real;
+    *(llr++)   = SCALE_SHORT_CONV_QAM1024 * imag;
+    real       = fabsf(real) - QAM1024_STEP_1;
+    imag       = fabsf(imag) - QAM1024_STEP_1;
+    *(llr++)   = SCALE_SHORT_CONV_QAM1024 * real;
+    *(llr++)   = SCALE_SHORT_CONV_QAM1024 * imag;
+    real       = fabsf(real) - QAM1024_STEP_2;
+    imag       = fabsf(imag) - QAM1024_STEP_2;
+    *(llr++)   = SCALE_SHORT_CONV_QAM1024 * real;
+    *(llr++)   = SCALE_SHORT_CONV_QAM1024 * imag;
+    real       = fabsf(real) - QAM1024_STEP_3;
+    imag       = fabsf(imag) - QAM1024_STEP_3;
+    *(llr++)   = SCALE_SHORT_CONV_QAM1024 * real;
+    *(llr++)   = SCALE_SHORT_CONV_QAM1024 * imag;
+    real       = fabsf(real) - QAM1024_STEP_4;
+    imag       = fabsf(imag) - QAM1024_STEP_4;
+    *(llr++)   = SCALE_SHORT_CONV_QAM1024 * real;
+    *(llr++)   = SCALE_SHORT_CONV_QAM1024 * imag;
+  }
+}
+
 int srsran_demod_soft_demodulate(srsran_mod_t modulation, const cf_t* symbols, float* llr, int nsymbols)
 {
   switch (modulation) {
@@ -860,6 +945,9 @@ int srsran_demod_soft_demodulate(srsran_mod_t modulation, const cf_t* symbols, f
       break;
     case SRSRAN_MOD_256QAM:
       demod_256qam_lte(symbols, llr, nsymbols);
+      break;
+    case SRSRAN_MOD_1024QAM:
+      demod_1024qam_lte(symbols, llr, nsymbols);
       break;
     default:
       ERROR("Invalid modulation %d", modulation);
@@ -886,6 +974,9 @@ int srsran_demod_soft_demodulate_s(srsran_mod_t modulation, const cf_t* symbols,
     case SRSRAN_MOD_256QAM:
       demod_256qam_lte_s(symbols, llr, nsymbols);
       break;
+    case SRSRAN_MOD_1024QAM:
+      demod_1024qam_lte_s(symbols, llr, nsymbols);
+      break;
     default:
       ERROR("Invalid modulation %d", modulation);
       return -1;
@@ -910,6 +1001,9 @@ int srsran_demod_soft_demodulate_b(srsran_mod_t modulation, const cf_t* symbols,
       break;
     case SRSRAN_MOD_256QAM:
       demod_256qam_lte_b(symbols, llr, nsymbols);
+      break;
+    case SRSRAN_MOD_1024QAM:
+      demod_1024qam_lte_b(symbols, llr, nsymbols);
       break;
     default:
       ERROR("Invalid modulation %d", modulation);

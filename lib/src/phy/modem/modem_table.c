@@ -122,6 +122,14 @@ int srsran_modem_table_lte(srsran_modem_table_t* q, srsran_mod_t modulation)
       }
       set_256QAMtable(q->symbol_table);
       break;
+    case SRSRAN_MOD_1024QAM:
+      q->nbits_x_symbol = 10;
+      q->nsymbols       = 1024;
+      if (table_create(q)) {
+        return SRSRAN_ERROR;
+      }
+      set_1024QAMtable(q->symbol_table);
+      break;
     case SRSRAN_MOD_NITEMS:
     default:; // Do nothing
   }
@@ -165,6 +173,9 @@ void srsran_modem_table_bytes(srsran_modem_table_t* q)
       q->byte_tables_init = true;
       break;
     case 8:
+      q->byte_tables_init = true;
+      break;
+    case 10:
       q->byte_tables_init = true;
       break;
   }

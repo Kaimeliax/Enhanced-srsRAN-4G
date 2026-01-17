@@ -238,6 +238,8 @@ srsran_mod_t srsran_str2mod(const char* str)
     return SRSRAN_MOD_64QAM;
   } else if (!strcmp(mod_str, "256QAM")) {
     return SRSRAN_MOD_256QAM;
+  } else if (!strcmp(mod_str, "1024QAM")) {
+    return SRSRAN_MOD_1024QAM;
   } else {
     return (srsran_mod_t)SRSRAN_ERROR_INVALID_INPUTS;
   }
@@ -256,6 +258,8 @@ char* srsran_mod_string(srsran_mod_t mod)
       return "64QAM";
     case SRSRAN_MOD_256QAM:
       return "256QAM";
+    case SRSRAN_MOD_1024QAM:
+      return "1024QAM";
     default:
       return "N/A";
   }
@@ -274,6 +278,8 @@ uint32_t srsran_mod_bits_x_symbol(srsran_mod_t mod)
       return 6;
     case SRSRAN_MOD_256QAM:
       return 8;
+    case SRSRAN_MOD_1024QAM:
+      return 10;
     default:
       return 0;
   }

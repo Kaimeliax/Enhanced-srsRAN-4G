@@ -60,6 +60,10 @@ int srsran_demod_hard_demodulate(srsran_demod_hard_t* q, cf_t* symbols, uint8_t*
       hard_qam256_demod(symbols, bits, nsymbols);
       nbits = nsymbols * 8;
       break;
+    case SRSRAN_MOD_1024QAM:
+      hard_qam1024_demod(symbols, bits, nsymbols);
+      nbits = nsymbols * 10;
+      break;
     case SRSRAN_MOD_NITEMS:
     default:; // Do nothing
   }

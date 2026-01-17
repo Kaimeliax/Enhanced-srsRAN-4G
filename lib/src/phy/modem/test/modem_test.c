@@ -40,7 +40,7 @@ void usage(char* prog)
 {
   printf("Usage: %s [nmse]\n", prog);
   printf("\t-n num_bits [Default %d]\n", num_bits);
-  printf("\t-m modulation (1: BPSK, 2: QPSK, 4: QAM16, 6: QAM64, 8: QAM256) [Default BPSK]\n");
+  printf("\t-m modulation (1: BPSK, 2: QPSK, 4: QAM16, 6: QAM64, 8: QAM256, 10: QAM1024) [Default BPSK]\n");
 }
 
 void parse_args(int argc, char** argv)
@@ -68,9 +68,12 @@ void parse_args(int argc, char** argv)
           case 8:
             modulation = SRSRAN_MOD_256QAM;
             break;
+          case 10:
+            modulation = SRSRAN_MOD_1024QAM;
+            break;
           default:
             ERROR("Invalid modulation %ld. Possible values: "
-                  "(1: BPSK, 2: QPSK, 4: QAM16, 6: QAM64, 8: QAM256)\n",
+                  "(1: BPSK, 2: QPSK, 4: QAM16, 6: QAM64, 8: QAM256, 10: QAM1024)\n",
                   strtol(argv[optind], NULL, 10));
             break;
         }

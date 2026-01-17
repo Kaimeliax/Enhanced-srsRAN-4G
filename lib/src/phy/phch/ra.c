@@ -152,14 +152,24 @@ srsran_mod_t srsran_ra_dl_mod_from_mcs(uint32_t mcs, bool use_tbs_index_alt)
 {
   if (use_tbs_index_alt) {
     // 3GPP 36.213 R12 Table 7.1.7.1-1A
-    if (mcs < 5 || mcs == 28) {
+    if (mcs == 28) {
       return SRSRAN_MOD_QPSK;
-    } else if (mcs < 11 || mcs == 29) {
+    } else if (mcs == 29) {
       return SRSRAN_MOD_16QAM;
-    } else if (mcs < 20 || mcs == 30) {
+    } else if (mcs == 30) {
       return SRSRAN_MOD_64QAM;
-    } else {
+    } else if (mcs == 31) {
       return SRSRAN_MOD_256QAM;
+    } else if (mcs < 5) {
+      return SRSRAN_MOD_QPSK;
+    } else if (mcs < 11) {
+      return SRSRAN_MOD_16QAM;
+    } else if (mcs < 20) {
+      return SRSRAN_MOD_64QAM;
+    } else if (mcs < 27) {
+      return SRSRAN_MOD_256QAM;
+    } else {
+      return SRSRAN_MOD_1024QAM;
     }
   } else {
     // 3GPP 36.213 R12 Table 7.1.7.1-1
