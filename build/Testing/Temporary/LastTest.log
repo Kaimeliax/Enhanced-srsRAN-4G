@@ -1,0 +1,1066 @@
+Start testing: Jan 18 00:26 UTC
+----------------------------------------------------------
+1166/1496 Testing: phy_dl_test-p6-t1-E1-q-m0
+1166/1496 Test: phy_dl_test-p6-t1-E1-q-m0
+Command: "/home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy/phy_dl_test" "-p" "6" "-t" "1" "-E" "1" "-q" "-m" "0"
+Directory: /home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy
+"phy_dl_test-p6-t1-E1-q-m0" start time: Jan 18 00:26 UTC
+Output:
+----------------------------------------------------------
+Finished! The UE failed decoding 0 of 30 transport blocks.
+4560 were transmitted, 4560 bits were received.
+[Rates in Mbps] Granted  Processed
+           eNb:     0.2       18.6
+            UE:     0.2        4.4
+BLER:   0.0%
+Ok
+<end of output>
+Test time =   0.17 sec
+----------------------------------------------------------
+Test Passed.
+"phy_dl_test-p6-t1-E1-q-m0" end time: Jan 18 00:26 UTC
+"phy_dl_test-p6-t1-E1-q-m0" time elapsed: 00:00:00
+----------------------------------------------------------
+
+1167/1496 Testing: phy_dl_test-p6-t1-E1-q-m7
+1167/1496 Test: phy_dl_test-p6-t1-E1-q-m7
+Command: "/home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy/phy_dl_test" "-p" "6" "-t" "1" "-E" "1" "-q" "-m" "7"
+Directory: /home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy
+"phy_dl_test-p6-t1-E1-q-m7" start time: Jan 18 00:26 UTC
+Output:
+----------------------------------------------------------
+Finished! The UE failed decoding 0 of 30 transport blocks.
+44112 were transmitted, 44112 bits were received.
+[Rates in Mbps] Granted  Processed
+           eNb:     1.5      127.1
+            UE:     1.5       39.5
+BLER:   0.0%
+Ok
+<end of output>
+Test time =   0.17 sec
+----------------------------------------------------------
+Test Passed.
+"phy_dl_test-p6-t1-E1-q-m7" end time: Jan 18 00:26 UTC
+"phy_dl_test-p6-t1-E1-q-m7" time elapsed: 00:00:00
+----------------------------------------------------------
+
+1168/1496 Testing: phy_dl_test-p6-t2-E1-q-m0
+1168/1496 Test: phy_dl_test-p6-t2-E1-q-m0
+Command: "/home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy/phy_dl_test" "-p" "6" "-t" "2" "-E" "1" "-q" "-m" "0"
+Directory: /home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy
+"phy_dl_test-p6-t2-E1-q-m0" start time: Jan 18 00:26 UTC
+Output:
+----------------------------------------------------------
+Finished! The UE failed decoding 0 of 30 transport blocks.
+4560 were transmitted, 4560 bits were received.
+[Rates in Mbps] Granted  Processed
+           eNb:     0.2       10.8
+            UE:     0.2        2.8
+BLER:   0.0%
+Ok
+<end of output>
+Test time =   0.18 sec
+----------------------------------------------------------
+Test Passed.
+"phy_dl_test-p6-t2-E1-q-m0" end time: Jan 18 00:26 UTC
+"phy_dl_test-p6-t2-E1-q-m0" time elapsed: 00:00:00
+----------------------------------------------------------
+
+1169/1496 Testing: phy_dl_test-p6-t2-E1-q-m7
+1169/1496 Test: phy_dl_test-p6-t2-E1-q-m7
+Command: "/home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy/phy_dl_test" "-p" "6" "-t" "2" "-E" "1" "-q" "-m" "7"
+Directory: /home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy
+"phy_dl_test-p6-t2-E1-q-m7" start time: Jan 18 00:26 UTC
+Output:
+----------------------------------------------------------
+Finished! The UE failed decoding 0 of 30 transport blocks.
+44112 were transmitted, 44112 bits were received.
+[Rates in Mbps] Granted  Processed
+           eNb:     1.5       86.0
+            UE:     1.5       25.5
+BLER:   0.0%
+Ok
+<end of output>
+Test time =   0.17 sec
+----------------------------------------------------------
+Test Passed.
+"phy_dl_test-p6-t2-E1-q-m7" end time: Jan 18 00:26 UTC
+"phy_dl_test-p6-t2-E1-q-m7" time elapsed: 00:00:00
+----------------------------------------------------------
+
+1170/1496 Testing: phy_dl_test-p6-t3-E1-q-m0
+1170/1496 Test: phy_dl_test-p6-t3-E1-q-m0
+Command: "/home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy/phy_dl_test" "-p" "6" "-t" "3" "-E" "1" "-q" "-m" "0"
+Directory: /home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy
+"phy_dl_test-p6-t3-E1-q-m0" start time: Jan 18 00:26 UTC
+Output:
+----------------------------------------------------------
+Finished! The UE failed decoding 0 of 60 transport blocks.
+9120 were transmitted, 9120 bits were received.
+[Rates in Mbps] Granted  Processed
+           eNb:     0.3       22.5
+            UE:     0.3        5.2
+BLER:   0.0%
+Ok
+<end of output>
+Test time =   0.17 sec
+----------------------------------------------------------
+Test Passed.
+"phy_dl_test-p6-t3-E1-q-m0" end time: Jan 18 00:26 UTC
+"phy_dl_test-p6-t3-E1-q-m0" time elapsed: 00:00:00
+----------------------------------------------------------
+
+1171/1496 Testing: phy_dl_test-p6-t3-E1-q-m7
+1171/1496 Test: phy_dl_test-p6-t3-E1-q-m7
+Command: "/home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy/phy_dl_test" "-p" "6" "-t" "3" "-E" "1" "-q" "-m" "7"
+Directory: /home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy
+"phy_dl_test-p6-t3-E1-q-m7" start time: Jan 18 00:26 UTC
+Output:
+----------------------------------------------------------
+Finished! The UE failed decoding 0 of 60 transport blocks.
+88224 were transmitted, 88224 bits were received.
+[Rates in Mbps] Granted  Processed
+           eNb:     2.9      150.3
+            UE:     2.9       45.5
+BLER:   0.0%
+Ok
+<end of output>
+Test time =   0.17 sec
+----------------------------------------------------------
+Test Passed.
+"phy_dl_test-p6-t3-E1-q-m7" end time: Jan 18 00:26 UTC
+"phy_dl_test-p6-t3-E1-q-m7" time elapsed: 00:00:00
+----------------------------------------------------------
+
+1172/1496 Testing: phy_dl_test-p6-t4-E1-q-m0
+1172/1496 Test: phy_dl_test-p6-t4-E1-q-m0
+Command: "/home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy/phy_dl_test" "-p" "6" "-t" "4" "-E" "1" "-q" "-m" "0"
+Directory: /home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy
+"phy_dl_test-p6-t4-E1-q-m0" start time: Jan 18 00:26 UTC
+Output:
+----------------------------------------------------------
+Finished! The UE failed decoding 0 of 60 transport blocks.
+9120 were transmitted, 9120 bits were received.
+[Rates in Mbps] Granted  Processed
+           eNb:     0.3       22.9
+            UE:     0.3        5.1
+BLER:   0.0%
+Ok
+<end of output>
+Test time =   0.17 sec
+----------------------------------------------------------
+Test Passed.
+"phy_dl_test-p6-t4-E1-q-m0" end time: Jan 18 00:26 UTC
+"phy_dl_test-p6-t4-E1-q-m0" time elapsed: 00:00:00
+----------------------------------------------------------
+
+1173/1496 Testing: phy_dl_test-p6-t4-E1-q-m7
+1173/1496 Test: phy_dl_test-p6-t4-E1-q-m7
+Command: "/home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy/phy_dl_test" "-p" "6" "-t" "4" "-E" "1" "-q" "-m" "7"
+Directory: /home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy
+"phy_dl_test-p6-t4-E1-q-m7" start time: Jan 18 00:26 UTC
+Output:
+----------------------------------------------------------
+Finished! The UE failed decoding 0 of 60 transport blocks.
+88224 were transmitted, 88224 bits were received.
+[Rates in Mbps] Granted  Processed
+           eNb:     2.9      147.3
+            UE:     2.9       44.9
+BLER:   0.0%
+Ok
+<end of output>
+Test time =   0.17 sec
+----------------------------------------------------------
+Test Passed.
+"phy_dl_test-p6-t4-E1-q-m7" end time: Jan 18 00:26 UTC
+"phy_dl_test-p6-t4-E1-q-m7" time elapsed: 00:00:00
+----------------------------------------------------------
+
+1190/1496 Testing: phy_dl_test-p15-t1-E1-q-m0
+1190/1496 Test: phy_dl_test-p15-t1-E1-q-m0
+Command: "/home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy/phy_dl_test" "-p" "15" "-t" "1" "-E" "1" "-q" "-m" "0"
+Directory: /home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy
+"phy_dl_test-p15-t1-E1-q-m0" start time: Jan 18 00:26 UTC
+Output:
+----------------------------------------------------------
+Finished! The UE failed decoding 0 of 30 transport blocks.
+11760 were transmitted, 11760 bits were received.
+[Rates in Mbps] Granted  Processed
+           eNb:     0.4       29.5
+            UE:     0.4        9.5
+BLER:   0.0%
+Ok
+<end of output>
+Test time =   0.24 sec
+----------------------------------------------------------
+Test Passed.
+"phy_dl_test-p15-t1-E1-q-m0" end time: Jan 18 00:26 UTC
+"phy_dl_test-p15-t1-E1-q-m0" time elapsed: 00:00:00
+----------------------------------------------------------
+
+1191/1496 Testing: phy_dl_test-p15-t1-E1-q-m7
+1191/1496 Test: phy_dl_test-p15-t1-E1-q-m7
+Command: "/home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy/phy_dl_test" "-p" "15" "-t" "1" "-E" "1" "-q" "-m" "7"
+Directory: /home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy
+"phy_dl_test-p15-t1-E1-q-m7" start time: Jan 18 00:26 UTC
+Output:
+----------------------------------------------------------
+Finished! The UE failed decoding 0 of 30 transport blocks.
+137520 were transmitted, 137520 bits were received.
+[Rates in Mbps] Granted  Processed
+           eNb:     4.6      212.9
+            UE:     4.6       65.7
+BLER:   0.0%
+Ok
+<end of output>
+Test time =   0.17 sec
+----------------------------------------------------------
+Test Passed.
+"phy_dl_test-p15-t1-E1-q-m7" end time: Jan 18 00:26 UTC
+"phy_dl_test-p15-t1-E1-q-m7" time elapsed: 00:00:00
+----------------------------------------------------------
+
+1192/1496 Testing: phy_dl_test-p15-t2-E1-q-m0
+1192/1496 Test: phy_dl_test-p15-t2-E1-q-m0
+Command: "/home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy/phy_dl_test" "-p" "15" "-t" "2" "-E" "1" "-q" "-m" "0"
+Directory: /home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy
+"phy_dl_test-p15-t2-E1-q-m0" start time: Jan 18 00:26 UTC
+Output:
+----------------------------------------------------------
+Finished! The UE failed decoding 0 of 30 transport blocks.
+11760 were transmitted, 11760 bits were received.
+[Rates in Mbps] Granted  Processed
+           eNb:     0.4       16.0
+            UE:     0.4        4.4
+BLER:   0.0%
+Ok
+<end of output>
+Test time =   0.18 sec
+----------------------------------------------------------
+Test Passed.
+"phy_dl_test-p15-t2-E1-q-m0" end time: Jan 18 00:26 UTC
+"phy_dl_test-p15-t2-E1-q-m0" time elapsed: 00:00:00
+----------------------------------------------------------
+
+1193/1496 Testing: phy_dl_test-p15-t2-E1-q-m7
+1193/1496 Test: phy_dl_test-p15-t2-E1-q-m7
+Command: "/home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy/phy_dl_test" "-p" "15" "-t" "2" "-E" "1" "-q" "-m" "7"
+Directory: /home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy
+"phy_dl_test-p15-t2-E1-q-m7" start time: Jan 18 00:26 UTC
+Output:
+----------------------------------------------------------
+Finished! The UE failed decoding 0 of 30 transport blocks.
+137520 were transmitted, 137520 bits were received.
+[Rates in Mbps] Granted  Processed
+           eNb:     4.6      132.7
+            UE:     4.6       42.6
+BLER:   0.0%
+Ok
+<end of output>
+Test time =   0.18 sec
+----------------------------------------------------------
+Test Passed.
+"phy_dl_test-p15-t2-E1-q-m7" end time: Jan 18 00:26 UTC
+"phy_dl_test-p15-t2-E1-q-m7" time elapsed: 00:00:00
+----------------------------------------------------------
+
+1194/1496 Testing: phy_dl_test-p15-t3-E1-q-m0
+1194/1496 Test: phy_dl_test-p15-t3-E1-q-m0
+Command: "/home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy/phy_dl_test" "-p" "15" "-t" "3" "-E" "1" "-q" "-m" "0"
+Directory: /home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy
+"phy_dl_test-p15-t3-E1-q-m0" start time: Jan 18 00:26 UTC
+Output:
+----------------------------------------------------------
+Finished! The UE failed decoding 0 of 60 transport blocks.
+23520 were transmitted, 23520 bits were received.
+[Rates in Mbps] Granted  Processed
+           eNb:     0.8       32.4
+            UE:     0.8        9.3
+BLER:   0.0%
+Ok
+<end of output>
+Test time =   0.18 sec
+----------------------------------------------------------
+Test Passed.
+"phy_dl_test-p15-t3-E1-q-m0" end time: Jan 18 00:26 UTC
+"phy_dl_test-p15-t3-E1-q-m0" time elapsed: 00:00:00
+----------------------------------------------------------
+
+1195/1496 Testing: phy_dl_test-p15-t3-E1-q-m7
+1195/1496 Test: phy_dl_test-p15-t3-E1-q-m7
+Command: "/home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy/phy_dl_test" "-p" "15" "-t" "3" "-E" "1" "-q" "-m" "7"
+Directory: /home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy
+"phy_dl_test-p15-t3-E1-q-m7" start time: Jan 18 00:26 UTC
+Output:
+----------------------------------------------------------
+Finished! The UE failed decoding 0 of 60 transport blocks.
+275040 were transmitted, 275040 bits were received.
+[Rates in Mbps] Granted  Processed
+           eNb:     9.2      226.4
+            UE:     9.2       71.4
+BLER:   0.0%
+Ok
+<end of output>
+Test time =   0.18 sec
+----------------------------------------------------------
+Test Passed.
+"phy_dl_test-p15-t3-E1-q-m7" end time: Jan 18 00:26 UTC
+"phy_dl_test-p15-t3-E1-q-m7" time elapsed: 00:00:00
+----------------------------------------------------------
+
+1196/1496 Testing: phy_dl_test-p15-t4-E1-q-m0
+1196/1496 Test: phy_dl_test-p15-t4-E1-q-m0
+Command: "/home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy/phy_dl_test" "-p" "15" "-t" "4" "-E" "1" "-q" "-m" "0"
+Directory: /home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy
+"phy_dl_test-p15-t4-E1-q-m0" start time: Jan 18 00:26 UTC
+Output:
+----------------------------------------------------------
+Finished! The UE failed decoding 0 of 60 transport blocks.
+23520 were transmitted, 23520 bits were received.
+[Rates in Mbps] Granted  Processed
+           eNb:     0.8       33.7
+            UE:     0.8        9.3
+BLER:   0.0%
+Ok
+<end of output>
+Test time =   0.18 sec
+----------------------------------------------------------
+Test Passed.
+"phy_dl_test-p15-t4-E1-q-m0" end time: Jan 18 00:26 UTC
+"phy_dl_test-p15-t4-E1-q-m0" time elapsed: 00:00:00
+----------------------------------------------------------
+
+1197/1496 Testing: phy_dl_test-p15-t4-E1-q-m7
+1197/1496 Test: phy_dl_test-p15-t4-E1-q-m7
+Command: "/home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy/phy_dl_test" "-p" "15" "-t" "4" "-E" "1" "-q" "-m" "7"
+Directory: /home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy
+"phy_dl_test-p15-t4-E1-q-m7" start time: Jan 18 00:26 UTC
+Output:
+----------------------------------------------------------
+Finished! The UE failed decoding 0 of 60 transport blocks.
+275040 were transmitted, 275040 bits were received.
+[Rates in Mbps] Granted  Processed
+           eNb:     9.2      224.7
+            UE:     9.2       71.0
+BLER:   0.0%
+Ok
+<end of output>
+Test time =   0.18 sec
+----------------------------------------------------------
+Test Passed.
+"phy_dl_test-p15-t4-E1-q-m7" end time: Jan 18 00:26 UTC
+"phy_dl_test-p15-t4-E1-q-m7" time elapsed: 00:00:00
+----------------------------------------------------------
+
+1214/1496 Testing: phy_dl_test-p25-t1-E1-q-m0
+1214/1496 Test: phy_dl_test-p25-t1-E1-q-m0
+Command: "/home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy/phy_dl_test" "-p" "25" "-t" "1" "-E" "1" "-q" "-m" "0"
+Directory: /home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy
+"phy_dl_test-p25-t1-E1-q-m0" start time: Jan 18 00:26 UTC
+Output:
+----------------------------------------------------------
+Finished! The UE failed decoding 0 of 40 transport blocks.
+27200 were transmitted, 27200 bits were received.
+[Rates in Mbps] Granted  Processed
+           eNb:     0.7       38.0
+            UE:     0.7       12.6
+BLER:   0.0%
+Ok
+<end of output>
+Test time =   0.42 sec
+----------------------------------------------------------
+Test Passed.
+"phy_dl_test-p25-t1-E1-q-m0" end time: Jan 18 00:26 UTC
+"phy_dl_test-p25-t1-E1-q-m0" time elapsed: 00:00:00
+----------------------------------------------------------
+
+1215/1496 Testing: phy_dl_test-p25-t1-E1-q-m7
+1215/1496 Test: phy_dl_test-p25-t1-E1-q-m7
+Command: "/home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy/phy_dl_test" "-p" "25" "-t" "1" "-E" "1" "-q" "-m" "7"
+Directory: /home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy
+"phy_dl_test-p25-t1-E1-q-m7" start time: Jan 18 00:26 UTC
+Output:
+----------------------------------------------------------
+Finished! The UE failed decoding 0 of 40 transport blocks.
+309440 were transmitted, 309440 bits were received.
+[Rates in Mbps] Granted  Processed
+           eNb:     7.7      236.0
+            UE:     7.7       80.3
+BLER:   0.0%
+Ok
+<end of output>
+Test time =   0.18 sec
+----------------------------------------------------------
+Test Passed.
+"phy_dl_test-p25-t1-E1-q-m7" end time: Jan 18 00:26 UTC
+"phy_dl_test-p25-t1-E1-q-m7" time elapsed: 00:00:00
+----------------------------------------------------------
+
+1216/1496 Testing: phy_dl_test-p25-t2-E1-q-m0
+1216/1496 Test: phy_dl_test-p25-t2-E1-q-m0
+Command: "/home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy/phy_dl_test" "-p" "25" "-t" "2" "-E" "1" "-q" "-m" "0"
+Directory: /home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy
+"phy_dl_test-p25-t2-E1-q-m0" start time: Jan 18 00:26 UTC
+Output:
+----------------------------------------------------------
+Finished! The UE failed decoding 0 of 40 transport blocks.
+27200 were transmitted, 27200 bits were received.
+[Rates in Mbps] Granted  Processed
+           eNb:     0.7       19.9
+            UE:     0.7        5.2
+BLER:   0.0%
+Ok
+<end of output>
+Test time =   0.18 sec
+----------------------------------------------------------
+Test Passed.
+"phy_dl_test-p25-t2-E1-q-m0" end time: Jan 18 00:26 UTC
+"phy_dl_test-p25-t2-E1-q-m0" time elapsed: 00:00:00
+----------------------------------------------------------
+
+1217/1496 Testing: phy_dl_test-p25-t2-E1-q-m7
+1217/1496 Test: phy_dl_test-p25-t2-E1-q-m7
+Command: "/home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy/phy_dl_test" "-p" "25" "-t" "2" "-E" "1" "-q" "-m" "7"
+Directory: /home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy
+"phy_dl_test-p25-t2-E1-q-m7" start time: Jan 18 00:26 UTC
+Output:
+----------------------------------------------------------
+Finished! The UE failed decoding 0 of 40 transport blocks.
+309440 were transmitted, 309440 bits were received.
+[Rates in Mbps] Granted  Processed
+           eNb:     7.7      155.7
+            UE:     7.7       48.6
+BLER:   0.0%
+Ok
+<end of output>
+Test time =   0.18 sec
+----------------------------------------------------------
+Test Passed.
+"phy_dl_test-p25-t2-E1-q-m7" end time: Jan 18 00:26 UTC
+"phy_dl_test-p25-t2-E1-q-m7" time elapsed: 00:00:00
+----------------------------------------------------------
+
+1218/1496 Testing: phy_dl_test-p25-t3-E1-q-m0
+1218/1496 Test: phy_dl_test-p25-t3-E1-q-m0
+Command: "/home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy/phy_dl_test" "-p" "25" "-t" "3" "-E" "1" "-q" "-m" "0"
+Directory: /home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy
+"phy_dl_test-p25-t3-E1-q-m0" start time: Jan 18 00:26 UTC
+Output:
+----------------------------------------------------------
+Finished! The UE failed decoding 0 of 80 transport blocks.
+54400 were transmitted, 54400 bits were received.
+[Rates in Mbps] Granted  Processed
+           eNb:     1.4       40.4
+            UE:     1.4       11.6
+BLER:   0.0%
+Ok
+<end of output>
+Test time =   0.18 sec
+----------------------------------------------------------
+Test Passed.
+"phy_dl_test-p25-t3-E1-q-m0" end time: Jan 18 00:26 UTC
+"phy_dl_test-p25-t3-E1-q-m0" time elapsed: 00:00:00
+----------------------------------------------------------
+
+1219/1496 Testing: phy_dl_test-p25-t3-E1-q-m7
+1219/1496 Test: phy_dl_test-p25-t3-E1-q-m7
+Command: "/home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy/phy_dl_test" "-p" "25" "-t" "3" "-E" "1" "-q" "-m" "7"
+Directory: /home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy
+"phy_dl_test-p25-t3-E1-q-m7" start time: Jan 18 00:26 UTC
+Output:
+----------------------------------------------------------
+Finished! The UE failed decoding 0 of 80 transport blocks.
+618880 were transmitted, 618880 bits were received.
+[Rates in Mbps] Granted  Processed
+           eNb:    15.5      246.3
+            UE:    15.5       75.9
+BLER:   0.0%
+Ok
+<end of output>
+Test time =   0.19 sec
+----------------------------------------------------------
+Test Passed.
+"phy_dl_test-p25-t3-E1-q-m7" end time: Jan 18 00:26 UTC
+"phy_dl_test-p25-t3-E1-q-m7" time elapsed: 00:00:00
+----------------------------------------------------------
+
+1220/1496 Testing: phy_dl_test-p25-t4-E1-q-m0
+1220/1496 Test: phy_dl_test-p25-t4-E1-q-m0
+Command: "/home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy/phy_dl_test" "-p" "25" "-t" "4" "-E" "1" "-q" "-m" "0"
+Directory: /home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy
+"phy_dl_test-p25-t4-E1-q-m0" start time: Jan 18 00:26 UTC
+Output:
+----------------------------------------------------------
+Finished! The UE failed decoding 0 of 80 transport blocks.
+54400 were transmitted, 54400 bits were received.
+[Rates in Mbps] Granted  Processed
+           eNb:     1.4       42.8
+            UE:     1.4       11.3
+BLER:   0.0%
+Ok
+<end of output>
+Test time =   0.18 sec
+----------------------------------------------------------
+Test Passed.
+"phy_dl_test-p25-t4-E1-q-m0" end time: Jan 18 00:26 UTC
+"phy_dl_test-p25-t4-E1-q-m0" time elapsed: 00:00:00
+----------------------------------------------------------
+
+1221/1496 Testing: phy_dl_test-p25-t4-E1-q-m7
+1221/1496 Test: phy_dl_test-p25-t4-E1-q-m7
+Command: "/home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy/phy_dl_test" "-p" "25" "-t" "4" "-E" "1" "-q" "-m" "7"
+Directory: /home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy
+"phy_dl_test-p25-t4-E1-q-m7" start time: Jan 18 00:26 UTC
+Output:
+----------------------------------------------------------
+Finished! The UE failed decoding 0 of 80 transport blocks.
+618880 were transmitted, 618880 bits were received.
+[Rates in Mbps] Granted  Processed
+           eNb:    15.5      246.5
+            UE:    15.5       76.6
+BLER:   0.0%
+Ok
+<end of output>
+Test time =   0.19 sec
+----------------------------------------------------------
+Test Passed.
+"phy_dl_test-p25-t4-E1-q-m7" end time: Jan 18 00:26 UTC
+"phy_dl_test-p25-t4-E1-q-m7" time elapsed: 00:00:00
+----------------------------------------------------------
+
+1238/1496 Testing: phy_dl_test-p50-t1-E1-q-m0
+1238/1496 Test: phy_dl_test-p50-t1-E1-q-m0
+Command: "/home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy/phy_dl_test" "-p" "50" "-t" "1" "-E" "1" "-q" "-m" "0"
+Directory: /home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy
+"phy_dl_test-p50-t1-E1-q-m0" start time: Jan 18 00:26 UTC
+Output:
+----------------------------------------------------------
+Finished! The UE failed decoding 0 of 130 transport blocks.
+179920 were transmitted, 179920 bits were received.
+[Rates in Mbps] Granted  Processed
+           eNb:     1.4       45.4
+            UE:     1.4       13.6
+BLER:   0.0%
+Ok
+<end of output>
+Test time =   0.42 sec
+----------------------------------------------------------
+Test Passed.
+"phy_dl_test-p50-t1-E1-q-m0" end time: Jan 18 00:26 UTC
+"phy_dl_test-p50-t1-E1-q-m0" time elapsed: 00:00:00
+----------------------------------------------------------
+
+1239/1496 Testing: phy_dl_test-p50-t1-E1-q-m7
+1239/1496 Test: phy_dl_test-p50-t1-E1-q-m7
+Command: "/home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy/phy_dl_test" "-p" "50" "-t" "1" "-E" "1" "-q" "-m" "7"
+Directory: /home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy
+"phy_dl_test-p50-t1-E1-q-m7" start time: Jan 18 00:26 UTC
+Output:
+----------------------------------------------------------
+Finished! The UE failed decoding 0 of 130 transport blocks.
+1984320 were transmitted, 1984320 bits were received.
+[Rates in Mbps] Granted  Processed
+           eNb:    15.3      256.8
+            UE:    15.3       82.2
+BLER:   0.0%
+Ok
+<end of output>
+Test time =   0.21 sec
+----------------------------------------------------------
+Test Passed.
+"phy_dl_test-p50-t1-E1-q-m7" end time: Jan 18 00:26 UTC
+"phy_dl_test-p50-t1-E1-q-m7" time elapsed: 00:00:00
+----------------------------------------------------------
+
+1240/1496 Testing: phy_dl_test-p50-t2-E1-q-m0
+1240/1496 Test: phy_dl_test-p50-t2-E1-q-m0
+Command: "/home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy/phy_dl_test" "-p" "50" "-t" "2" "-E" "1" "-q" "-m" "0"
+Directory: /home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy
+"phy_dl_test-p50-t2-E1-q-m0" start time: Jan 18 00:26 UTC
+Output:
+----------------------------------------------------------
+Finished! The UE failed decoding 0 of 130 transport blocks.
+179920 were transmitted, 179920 bits were received.
+[Rates in Mbps] Granted  Processed
+           eNb:     1.4       21.9
+            UE:     1.4        5.2
+BLER:   0.0%
+Ok
+<end of output>
+Test time =   0.22 sec
+----------------------------------------------------------
+Test Passed.
+"phy_dl_test-p50-t2-E1-q-m0" end time: Jan 18 00:26 UTC
+"phy_dl_test-p50-t2-E1-q-m0" time elapsed: 00:00:00
+----------------------------------------------------------
+
+1241/1496 Testing: phy_dl_test-p50-t2-E1-q-m7
+1241/1496 Test: phy_dl_test-p50-t2-E1-q-m7
+Command: "/home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy/phy_dl_test" "-p" "50" "-t" "2" "-E" "1" "-q" "-m" "7"
+Directory: /home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy
+"phy_dl_test-p50-t2-E1-q-m7" start time: Jan 18 00:26 UTC
+Output:
+----------------------------------------------------------
+Finished! The UE failed decoding 0 of 130 transport blocks.
+1984320 were transmitted, 1984320 bits were received.
+[Rates in Mbps] Granted  Processed
+           eNb:    15.3      167.8
+            UE:    15.3       46.1
+BLER:   0.0%
+Ok
+<end of output>
+Test time =   0.24 sec
+----------------------------------------------------------
+Test Passed.
+"phy_dl_test-p50-t2-E1-q-m7" end time: Jan 18 00:26 UTC
+"phy_dl_test-p50-t2-E1-q-m7" time elapsed: 00:00:00
+----------------------------------------------------------
+
+1242/1496 Testing: phy_dl_test-p50-t3-E1-q-m0
+1242/1496 Test: phy_dl_test-p50-t3-E1-q-m0
+Command: "/home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy/phy_dl_test" "-p" "50" "-t" "3" "-E" "1" "-q" "-m" "0"
+Directory: /home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy
+"phy_dl_test-p50-t3-E1-q-m0" start time: Jan 18 00:26 UTC
+Output:
+----------------------------------------------------------
+Finished! The UE failed decoding 0 of 260 transport blocks.
+359840 were transmitted, 359840 bits were received.
+[Rates in Mbps] Granted  Processed
+           eNb:     2.8       46.8
+            UE:     2.8       12.5
+BLER:   0.0%
+Ok
+<end of output>
+Test time =   0.22 sec
+----------------------------------------------------------
+Test Passed.
+"phy_dl_test-p50-t3-E1-q-m0" end time: Jan 18 00:26 UTC
+"phy_dl_test-p50-t3-E1-q-m0" time elapsed: 00:00:00
+----------------------------------------------------------
+
+1243/1496 Testing: phy_dl_test-p50-t3-E1-q-m7
+1243/1496 Test: phy_dl_test-p50-t3-E1-q-m7
+Command: "/home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy/phy_dl_test" "-p" "50" "-t" "3" "-E" "1" "-q" "-m" "7"
+Directory: /home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy
+"phy_dl_test-p50-t3-E1-q-m7" start time: Jan 18 00:26 UTC
+Output:
+----------------------------------------------------------
+Finished! The UE failed decoding 0 of 260 transport blocks.
+3968640 were transmitted, 3968640 bits were received.
+[Rates in Mbps] Granted  Processed
+           eNb:    30.5      266.3
+            UE:    30.5       79.1
+BLER:   0.0%
+Ok
+<end of output>
+Test time =   0.25 sec
+----------------------------------------------------------
+Test Passed.
+"phy_dl_test-p50-t3-E1-q-m7" end time: Jan 18 00:26 UTC
+"phy_dl_test-p50-t3-E1-q-m7" time elapsed: 00:00:00
+----------------------------------------------------------
+
+1244/1496 Testing: phy_dl_test-p50-t4-E1-q-m0
+1244/1496 Test: phy_dl_test-p50-t4-E1-q-m0
+Command: "/home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy/phy_dl_test" "-p" "50" "-t" "4" "-E" "1" "-q" "-m" "0"
+Directory: /home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy
+"phy_dl_test-p50-t4-E1-q-m0" start time: Jan 18 00:26 UTC
+Output:
+----------------------------------------------------------
+Finished! The UE failed decoding 0 of 260 transport blocks.
+359840 were transmitted, 359840 bits were received.
+[Rates in Mbps] Granted  Processed
+           eNb:     2.8       47.0
+            UE:     2.8       12.4
+BLER:   0.0%
+Ok
+<end of output>
+Test time =   0.22 sec
+----------------------------------------------------------
+Test Passed.
+"phy_dl_test-p50-t4-E1-q-m0" end time: Jan 18 00:26 UTC
+"phy_dl_test-p50-t4-E1-q-m0" time elapsed: 00:00:00
+----------------------------------------------------------
+
+1245/1496 Testing: phy_dl_test-p50-t4-E1-q-m7
+1245/1496 Test: phy_dl_test-p50-t4-E1-q-m7
+Command: "/home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy/phy_dl_test" "-p" "50" "-t" "4" "-E" "1" "-q" "-m" "7"
+Directory: /home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy
+"phy_dl_test-p50-t4-E1-q-m7" start time: Jan 18 00:26 UTC
+Output:
+----------------------------------------------------------
+Finished! The UE failed decoding 0 of 260 transport blocks.
+3968640 were transmitted, 3968640 bits were received.
+[Rates in Mbps] Granted  Processed
+           eNb:    30.5      265.2
+            UE:    30.5       78.5
+BLER:   0.0%
+Ok
+<end of output>
+Test time =   0.25 sec
+----------------------------------------------------------
+Test Passed.
+"phy_dl_test-p50-t4-E1-q-m7" end time: Jan 18 00:26 UTC
+"phy_dl_test-p50-t4-E1-q-m7" time elapsed: 00:00:00
+----------------------------------------------------------
+
+1262/1496 Testing: phy_dl_test-p75-t1-E1-q-m0
+1262/1496 Test: phy_dl_test-p75-t1-E1-q-m0
+Command: "/home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy/phy_dl_test" "-p" "75" "-t" "1" "-E" "1" "-q" "-m" "0"
+Directory: /home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy
+"phy_dl_test-p75-t1-E1-q-m0" start time: Jan 18 00:26 UTC
+Output:
+----------------------------------------------------------
+Finished! The UE failed decoding 0 of 150 transport blocks.
+313200 were transmitted, 313200 bits were received.
+[Rates in Mbps] Granted  Processed
+           eNb:     2.1       50.4
+            UE:     2.1       16.7
+BLER:   0.0%
+Ok
+<end of output>
+Test time =   0.33 sec
+----------------------------------------------------------
+Test Passed.
+"phy_dl_test-p75-t1-E1-q-m0" end time: Jan 18 00:26 UTC
+"phy_dl_test-p75-t1-E1-q-m0" time elapsed: 00:00:00
+----------------------------------------------------------
+
+1263/1496 Testing: phy_dl_test-p75-t1-E1-q-m7
+1263/1496 Test: phy_dl_test-p75-t1-E1-q-m7
+Command: "/home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy/phy_dl_test" "-p" "75" "-t" "1" "-E" "1" "-q" "-m" "7"
+Directory: /home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy
+"phy_dl_test-p75-t1-E1-q-m7" start time: Jan 18 00:26 UTC
+Output:
+----------------------------------------------------------
+Finished! The UE failed decoding 0 of 150 transport blocks.
+3438000 were transmitted, 3438000 bits were received.
+[Rates in Mbps] Granted  Processed
+           eNb:    22.9      270.9
+            UE:    22.9       90.2
+BLER:   0.0%
+Ok
+<end of output>
+Test time =   0.23 sec
+----------------------------------------------------------
+Test Passed.
+"phy_dl_test-p75-t1-E1-q-m7" end time: Jan 18 00:26 UTC
+"phy_dl_test-p75-t1-E1-q-m7" time elapsed: 00:00:00
+----------------------------------------------------------
+
+1264/1496 Testing: phy_dl_test-p75-t2-E1-q-m0
+1264/1496 Test: phy_dl_test-p75-t2-E1-q-m0
+Command: "/home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy/phy_dl_test" "-p" "75" "-t" "2" "-E" "1" "-q" "-m" "0"
+Directory: /home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy
+"phy_dl_test-p75-t2-E1-q-m0" start time: Jan 18 00:26 UTC
+Output:
+----------------------------------------------------------
+Finished! The UE failed decoding 0 of 150 transport blocks.
+313200 were transmitted, 313200 bits were received.
+[Rates in Mbps] Granted  Processed
+           eNb:     2.1       23.7
+            UE:     2.1        5.4
+BLER:   0.0%
+Ok
+<end of output>
+Test time =   0.26 sec
+----------------------------------------------------------
+Test Passed.
+"phy_dl_test-p75-t2-E1-q-m0" end time: Jan 18 00:26 UTC
+"phy_dl_test-p75-t2-E1-q-m0" time elapsed: 00:00:00
+----------------------------------------------------------
+
+1265/1496 Testing: phy_dl_test-p75-t2-E1-q-m7
+1265/1496 Test: phy_dl_test-p75-t2-E1-q-m7
+Command: "/home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy/phy_dl_test" "-p" "75" "-t" "2" "-E" "1" "-q" "-m" "7"
+Directory: /home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy
+"phy_dl_test-p75-t2-E1-q-m7" start time: Jan 18 00:26 UTC
+Output:
+----------------------------------------------------------
+Finished! The UE failed decoding 0 of 150 transport blocks.
+3438000 were transmitted, 3438000 bits were received.
+[Rates in Mbps] Granted  Processed
+           eNb:    22.9      176.3
+            UE:    22.9       46.7
+BLER:   0.0%
+Ok
+<end of output>
+Test time =   0.28 sec
+----------------------------------------------------------
+Test Passed.
+"phy_dl_test-p75-t2-E1-q-m7" end time: Jan 18 00:26 UTC
+"phy_dl_test-p75-t2-E1-q-m7" time elapsed: 00:00:00
+----------------------------------------------------------
+
+1266/1496 Testing: phy_dl_test-p75-t3-E1-q-m0
+1266/1496 Test: phy_dl_test-p75-t3-E1-q-m0
+Command: "/home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy/phy_dl_test" "-p" "75" "-t" "3" "-E" "1" "-q" "-m" "0"
+Directory: /home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy
+"phy_dl_test-p75-t3-E1-q-m0" start time: Jan 18 00:26 UTC
+Output:
+----------------------------------------------------------
+Finished! The UE failed decoding 0 of 300 transport blocks.
+626400 were transmitted, 626400 bits were received.
+[Rates in Mbps] Granted  Processed
+           eNb:     4.2       51.4
+            UE:     4.2       13.8
+BLER:   0.0%
+Ok
+<end of output>
+Test time =   0.25 sec
+----------------------------------------------------------
+Test Passed.
+"phy_dl_test-p75-t3-E1-q-m0" end time: Jan 18 00:26 UTC
+"phy_dl_test-p75-t3-E1-q-m0" time elapsed: 00:00:00
+----------------------------------------------------------
+
+1267/1496 Testing: phy_dl_test-p75-t3-E1-q-m7
+1267/1496 Test: phy_dl_test-p75-t3-E1-q-m7
+Command: "/home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy/phy_dl_test" "-p" "75" "-t" "3" "-E" "1" "-q" "-m" "7"
+Directory: /home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy
+"phy_dl_test-p75-t3-E1-q-m7" start time: Jan 18 00:26 UTC
+Output:
+----------------------------------------------------------
+Finished! The UE failed decoding 0 of 300 transport blocks.
+6876000 were transmitted, 6876000 bits were received.
+[Rates in Mbps] Granted  Processed
+           eNb:    45.8      275.2
+            UE:    45.8       83.5
+BLER:   0.0%
+Ok
+<end of output>
+Test time =   0.30 sec
+----------------------------------------------------------
+Test Passed.
+"phy_dl_test-p75-t3-E1-q-m7" end time: Jan 18 00:26 UTC
+"phy_dl_test-p75-t3-E1-q-m7" time elapsed: 00:00:00
+----------------------------------------------------------
+
+1268/1496 Testing: phy_dl_test-p75-t4-E1-q-m0
+1268/1496 Test: phy_dl_test-p75-t4-E1-q-m0
+Command: "/home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy/phy_dl_test" "-p" "75" "-t" "4" "-E" "1" "-q" "-m" "0"
+Directory: /home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy
+"phy_dl_test-p75-t4-E1-q-m0" start time: Jan 18 00:26 UTC
+Output:
+----------------------------------------------------------
+Finished! The UE failed decoding 0 of 300 transport blocks.
+626400 were transmitted, 626400 bits were received.
+[Rates in Mbps] Granted  Processed
+           eNb:     4.2       51.4
+            UE:     4.2       13.6
+BLER:   0.0%
+Ok
+<end of output>
+Test time =   0.25 sec
+----------------------------------------------------------
+Test Passed.
+"phy_dl_test-p75-t4-E1-q-m0" end time: Jan 18 00:26 UTC
+"phy_dl_test-p75-t4-E1-q-m0" time elapsed: 00:00:00
+----------------------------------------------------------
+
+1269/1496 Testing: phy_dl_test-p75-t4-E1-q-m7
+1269/1496 Test: phy_dl_test-p75-t4-E1-q-m7
+Command: "/home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy/phy_dl_test" "-p" "75" "-t" "4" "-E" "1" "-q" "-m" "7"
+Directory: /home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy
+"phy_dl_test-p75-t4-E1-q-m7" start time: Jan 18 00:26 UTC
+Output:
+----------------------------------------------------------
+Finished! The UE failed decoding 0 of 300 transport blocks.
+6876000 were transmitted, 6876000 bits were received.
+[Rates in Mbps] Granted  Processed
+           eNb:    45.8      274.8
+            UE:    45.8       82.6
+BLER:   0.0%
+Ok
+<end of output>
+Test time =   0.31 sec
+----------------------------------------------------------
+Test Passed.
+"phy_dl_test-p75-t4-E1-q-m7" end time: Jan 18 00:26 UTC
+"phy_dl_test-p75-t4-E1-q-m7" time elapsed: 00:00:00
+----------------------------------------------------------
+
+1286/1496 Testing: phy_dl_test-p100-t1-E1-q-m0
+1286/1496 Test: phy_dl_test-p100-t1-E1-q-m0
+Command: "/home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy/phy_dl_test" "-p" "100" "-t" "1" "-E" "1" "-q" "-m" "0"
+Directory: /home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy
+"phy_dl_test-p100-t1-E1-q-m0" start time: Jan 18 00:26 UTC
+Output:
+----------------------------------------------------------
+Finished! The UE failed decoding 0 of 160 transport blocks.
+446720 were transmitted, 446720 bits were received.
+[Rates in Mbps] Granted  Processed
+           eNb:     2.8       45.0
+            UE:     2.8       17.2
+BLER:   0.0%
+Ok
+<end of output>
+Test time =   0.50 sec
+----------------------------------------------------------
+Test Passed.
+"phy_dl_test-p100-t1-E1-q-m0" end time: Jan 18 00:26 UTC
+"phy_dl_test-p100-t1-E1-q-m0" time elapsed: 00:00:00
+----------------------------------------------------------
+
+1287/1496 Testing: phy_dl_test-p100-t1-E1-q-m7
+1287/1496 Test: phy_dl_test-p100-t1-E1-q-m7
+Command: "/home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy/phy_dl_test" "-p" "100" "-t" "1" "-E" "1" "-q" "-m" "7"
+Directory: /home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy
+"phy_dl_test-p100-t1-E1-q-m7" start time: Jan 18 00:26 UTC
+Output:
+----------------------------------------------------------
+Finished! The UE failed decoding 0 of 160 transport blocks.
+4892160 were transmitted, 4892160 bits were received.
+[Rates in Mbps] Granted  Processed
+           eNb:    30.6      256.2
+            UE:    30.6       93.1
+BLER:   0.0%
+Ok
+<end of output>
+Test time =   0.26 sec
+----------------------------------------------------------
+Test Passed.
+"phy_dl_test-p100-t1-E1-q-m7" end time: Jan 18 00:26 UTC
+"phy_dl_test-p100-t1-E1-q-m7" time elapsed: 00:00:00
+----------------------------------------------------------
+
+1288/1496 Testing: phy_dl_test-p100-t2-E1-q-m0
+1288/1496 Test: phy_dl_test-p100-t2-E1-q-m0
+Command: "/home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy/phy_dl_test" "-p" "100" "-t" "2" "-E" "1" "-q" "-m" "0"
+Directory: /home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy
+"phy_dl_test-p100-t2-E1-q-m0" start time: Jan 18 00:26 UTC
+Output:
+----------------------------------------------------------
+Finished! The UE failed decoding 0 of 160 transport blocks.
+446720 were transmitted, 446720 bits were received.
+[Rates in Mbps] Granted  Processed
+           eNb:     2.8       20.7
+            UE:     2.8        5.9
+BLER:   0.0%
+Ok
+<end of output>
+Test time =   0.29 sec
+----------------------------------------------------------
+Test Passed.
+"phy_dl_test-p100-t2-E1-q-m0" end time: Jan 18 00:26 UTC
+"phy_dl_test-p100-t2-E1-q-m0" time elapsed: 00:00:00
+----------------------------------------------------------
+
+1289/1496 Testing: phy_dl_test-p100-t2-E1-q-m7
+1289/1496 Test: phy_dl_test-p100-t2-E1-q-m7
+Command: "/home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy/phy_dl_test" "-p" "100" "-t" "2" "-E" "1" "-q" "-m" "7"
+Directory: /home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy
+"phy_dl_test-p100-t2-E1-q-m7" start time: Jan 18 00:26 UTC
+Output:
+----------------------------------------------------------
+Finished! The UE failed decoding 0 of 160 transport blocks.
+4892160 were transmitted, 4892160 bits were received.
+[Rates in Mbps] Granted  Processed
+           eNb:    30.6      161.2
+            UE:    30.6       47.4
+BLER:   0.0%
+Ok
+<end of output>
+Test time =   0.32 sec
+----------------------------------------------------------
+Test Passed.
+"phy_dl_test-p100-t2-E1-q-m7" end time: Jan 18 00:26 UTC
+"phy_dl_test-p100-t2-E1-q-m7" time elapsed: 00:00:00
+----------------------------------------------------------
+
+1290/1496 Testing: phy_dl_test-p100-t3-E1-q-m0
+1290/1496 Test: phy_dl_test-p100-t3-E1-q-m0
+Command: "/home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy/phy_dl_test" "-p" "100" "-t" "3" "-E" "1" "-q" "-m" "0"
+Directory: /home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy
+"phy_dl_test-p100-t3-E1-q-m0" start time: Jan 18 00:26 UTC
+Output:
+----------------------------------------------------------
+Finished! The UE failed decoding 0 of 320 transport blocks.
+893440 were transmitted, 893440 bits were received.
+[Rates in Mbps] Granted  Processed
+           eNb:     5.6       44.6
+            UE:     5.6       14.0
+BLER:   0.0%
+Ok
+<end of output>
+Test time =   0.29 sec
+----------------------------------------------------------
+Test Passed.
+"phy_dl_test-p100-t3-E1-q-m0" end time: Jan 18 00:26 UTC
+"phy_dl_test-p100-t3-E1-q-m0" time elapsed: 00:00:00
+----------------------------------------------------------
+
+1291/1496 Testing: phy_dl_test-p100-t3-E1-q-m7
+1291/1496 Test: phy_dl_test-p100-t3-E1-q-m7
+Command: "/home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy/phy_dl_test" "-p" "100" "-t" "3" "-E" "1" "-q" "-m" "7"
+Directory: /home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy
+"phy_dl_test-p100-t3-E1-q-m7" start time: Jan 18 00:26 UTC
+Output:
+----------------------------------------------------------
+Finished! The UE failed decoding 0 of 320 transport blocks.
+9784320 were transmitted, 9784320 bits were received.
+[Rates in Mbps] Granted  Processed
+           eNb:    61.2      256.4
+            UE:    61.2       84.4
+BLER:   0.0%
+Ok
+<end of output>
+Test time =   0.36 sec
+----------------------------------------------------------
+Test Passed.
+"phy_dl_test-p100-t3-E1-q-m7" end time: Jan 18 00:26 UTC
+"phy_dl_test-p100-t3-E1-q-m7" time elapsed: 00:00:00
+----------------------------------------------------------
+
+1292/1496 Testing: phy_dl_test-p100-t4-E1-q-m0
+1292/1496 Test: phy_dl_test-p100-t4-E1-q-m0
+Command: "/home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy/phy_dl_test" "-p" "100" "-t" "4" "-E" "1" "-q" "-m" "0"
+Directory: /home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy
+"phy_dl_test-p100-t4-E1-q-m0" start time: Jan 18 00:26 UTC
+Output:
+----------------------------------------------------------
+Finished! The UE failed decoding 0 of 320 transport blocks.
+893440 were transmitted, 893440 bits were received.
+[Rates in Mbps] Granted  Processed
+           eNb:     5.6       44.5
+            UE:     5.6       13.9
+BLER:   0.0%
+Ok
+<end of output>
+Test time =   0.29 sec
+----------------------------------------------------------
+Test Passed.
+"phy_dl_test-p100-t4-E1-q-m0" end time: Jan 18 00:26 UTC
+"phy_dl_test-p100-t4-E1-q-m0" time elapsed: 00:00:00
+----------------------------------------------------------
+
+1293/1496 Testing: phy_dl_test-p100-t4-E1-q-m7
+1293/1496 Test: phy_dl_test-p100-t4-E1-q-m7
+Command: "/home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy/phy_dl_test" "-p" "100" "-t" "4" "-E" "1" "-q" "-m" "7"
+Directory: /home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/lib/test/phy
+"phy_dl_test-p100-t4-E1-q-m7" start time: Jan 18 00:26 UTC
+Output:
+----------------------------------------------------------
+Finished! The UE failed decoding 0 of 320 transport blocks.
+9784320 were transmitted, 9784320 bits were received.
+[Rates in Mbps] Granted  Processed
+           eNb:    61.2      256.0
+            UE:    61.2       83.6
+BLER:   0.0%
+Ok
+<end of output>
+Test time =   0.36 sec
+----------------------------------------------------------
+Test Passed.
+"phy_dl_test-p100-t4-E1-q-m7" end time: Jan 18 00:26 UTC
+"phy_dl_test-p100-t4-E1-q-m7" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Jan 18 00:26 UTC
+
+lib =  11.51 sec*proc
+
+lte =  11.51 sec*proc
+
+phy =  11.51 sec*proc
+

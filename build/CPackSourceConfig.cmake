@@ -11,7 +11,7 @@
 
 
 set(CPACK_BUILD_SOURCE_DIRS "/home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G;/home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build")
-set(CPACK_CMAKE_GENERATOR "Unix Makefiles")
+set(CPACK_CMAKE_GENERATOR "Ninja")
 set(CPACK_COMPONENTS_ALL "")
 set(CPACK_COMPONENT_UNSPECIFIED_HIDDEN "TRUE")
 set(CPACK_COMPONENT_UNSPECIFIED_REQUIRED "TRUE")
