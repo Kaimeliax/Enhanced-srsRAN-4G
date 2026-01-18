@@ -1,5 +1,0 @@
-# Directory labels
- sched
- nr
-# Source files and their labels
-/home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/srsgnb/src/stack/mac/test/sched_nr_rar_test.cc

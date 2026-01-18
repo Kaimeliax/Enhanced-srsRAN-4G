@@ -1,6 +1,0 @@
-# CMake generated Testfile for 
-# Source directory: /home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/srsepc/src/hss
-# Build directory: /home/runner/work/Enhanced-srsRAN-4G/Enhanced-srsRAN-4G/build/srsepc/src/hss
-# 
-# This file includes the relevant testing commands required for 
-# testing this directory and lists subdirectories to be tested as well.
